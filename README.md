@@ -2,11 +2,11 @@
 > **WORK IN PROGRESS**  
 > **UNDER REVIEW**
 
-# [Unofficial Alibre Script Documentation Wiki](https://github.com/stephensmitchell/alibre-script-docs/wiki) 
+# [Unofficial Alibre Script API Documentation Wiki](https://github.com/stephensmitchell/alibre-script-docs/wiki) 
 
-# [Unofficial Alibre Script Documentation Site](https://publish.obsidian.md/alibre-script-documentation/README)
+# [Unofficial Alibre Script API Documentation Site](https://publish.obsidian.md/alibre-script-documentation/README)
 
-# Unofficial Alibre Script Documentation Repository Report 
+# Unofficial Alibre Script API Documentation Repository Report 
 
 ```
 alibre-script-docs - REPOSITORY STATUS REPORT
