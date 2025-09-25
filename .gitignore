@@ -1,5 +1,5 @@
 # Ignore private folder containing scripts and utilities
-private/
+/private/
 
 # Common temporary files
 *.tmp
