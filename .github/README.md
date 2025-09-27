@@ -4,8 +4,15 @@
 
 # [Unofficial Alibre Script API Documentation Wiki](https://github.com/stephensmitchell/alibre-script-docs/wiki) 
 
-# [Unofficial Alibre Script API Documentation Site](https://publish.obsidian.md/alibre-script-documentation/README)
-
+> [!NOTE]  
+> **TESTING SELF HOST PUBLISHING TOOLS**
+> 
+> DOWNLOAD THE OBSIDIAN APP FOR A BETTER LOCAL EXPERIENCE
+> 
+> https://obsidian.md/
+<!--
+# [Unofficial Alibre Script API Documentation Site]()
+-->
 # Unofficial Alibre Script API Documentation Repository Report 
 
 ```
