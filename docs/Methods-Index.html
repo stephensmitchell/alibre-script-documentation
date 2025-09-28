@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Methods-Index</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="alibre-script-documentation"/><meta property="og:title" content="Methods-Index"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Methods-Index"/><meta name="twitter:description" content="Methods Index Home | Classes | Methods Index | Properties | Members Alphabetical index of all methods in the AlibreScript API Browse Methods by Category Assembly Methods Assembly constraint operations | Component management Sketching Methods 2D sketch operations | 3D sketch operations | Constraint m..."/><meta property="og:description" content="Methods Index Home | Classes | Methods Index | Properties | Members Alphabetical index of all methods in the AlibreScript API Browse Methods by Category Assembly Methods Assembly constraint operations | Component management Sketching Methods 2D sketch operations | 3D sketch operations | Constraint m..."/><meta property="og:image:alt" content="Methods Index Home | Classes | Methods Index | Properties | Members Alphabetical index of all methods in the AlibreScript API Browse Methods by Category Assembly Methods Assembly constraint operations | Component management Sketching Methods 2D sketch operations | 3D sketch operations | Constraint m..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Methods-Index"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Methods-Index"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Methods Index Home | Classes | Methods Index | Properties | Members Alphabetical index of all methods in the AlibreScript API Browse Methods by Category Assembly Methods Assembly constraint operations | Component management Sketching Methods 2D sketch operations | 3D sketch operations | Constraint m..."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiVDpcXGxvY2FsXFxhbGlicmUtc2NyaXB0LWRvY3MtUXVhcnR6NFxccXVhcnR6XFxxdWFydHpcXGNvbXBvbmVudHNcXHN0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="./prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Methods-Index-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Methods-Index-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Methods-Index-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Methods-Index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">alibre-script-documentation</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-34"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-34" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Methods Index</a></div></nav><h1 class="article-title">Methods-Index</h1><p show-comma="true" class="content-meta"><time datetime="2025-09-28T06:35:44.211Z">Sep 28, 2025</time><span>11 min read</span></p></div></div><article class="popover-hint"><h1 id="methods-index">Methods Index<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#methods-index" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><strong><a href="./Home" class="internal" data-slug="Home">Home</a> | <a href="./Classes" class="internal" data-slug="Classes">Classes</a> | Methods Index | <a href="./Properties-Index" class="internal alias" data-slug="Properties-Index">Properties</a> | <a href="./Members-Index" class="internal alias" data-slug="Members-Index">Members</a></strong></p>
+<p><em>Alphabetical index of all methods in the AlibreScript API</em></p>
+<h2 id="browse-methods-by-category">Browse Methods by Category<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#browse-methods-by-category" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="assembly-methods">Assembly Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assembly-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="./Assembly#constraint-methods" class="internal alias" data-slug="Assembly">Assembly constraint operations</a> | <a href="./Assembly#component-methods" class="internal alias" data-slug="Assembly">Component management</a></p>
+<h3 id="sketching-methods">Sketching Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sketching-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="./Sketch#methods" class="internal alias" data-slug="Sketch">2D sketch operations</a> | <a href="./Sketch3D#methods" class="internal alias" data-slug="Sketch3D">3D sketch operations</a> | <a href="./Sketch.Constraints#methods" class="internal alias" data-slug="Sketch.Constraints">Constraint methods</a></p>
+<h3 id="geometry-methods">Geometry Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geometry-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="./Line#methods" class="internal alias" data-slug="Line">Line operations</a> | <a href="./Circle#methods" class="internal alias" data-slug="Circle">Circle operations</a> | <a href="./CircularArc#methods" class="internal alias" data-slug="CircularArc">Arc operations</a></p>
+<h3 id="part-methods">Part Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="./Part#methods" class="internal alias" data-slug="Part">Part creation</a> | <a href="./Feature#methods" class="internal alias" data-slug="Feature">Feature operations</a> | <a href="./Part#file-operations" class="internal alias" data-slug="Part">File operations</a></p>
+<h2 id="alphabetical-method-list">Alphabetical Method List<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alphabetical-method-list" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Quick Jump:</strong><a href="#" class="internal">#</a> | <a href="#a" class="internal alias">A</a> | <a href="#b" class="internal alias">B</a> | <a href="#c" class="internal alias">C</a> | <a href="#d" class="internal alias">D</a> | <a href="#e" class="internal alias">E</a> | <a href="#f" class="internal alias">F</a> | <a href="#g" class="internal alias">G</a> | <a href="#h" class="internal alias">H</a> | <a href="#i" class="internal alias">I</a> | <a href="#j" class="internal alias">J</a> | <a href="#k" class="internal alias">K</a> | <a href="#l" class="internal alias">L</a> | <a href="#m" class="internal alias">M</a> | <a href="#n" class="internal alias">N</a> | <a href="#o" class="internal alias">O</a> | <a href="#p" class="internal alias">P</a> | <a href="#q" class="internal alias">Q</a> | <a href="#r" class="internal alias">R</a> | <a href="#s" class="internal alias">S</a> | <a href="#t" class="internal alias">T</a> | <a href="#u" class="internal alias">U</a> | <a href="#v" class="internal alias">V</a> | <a href="#w" class="internal alias">W</a> | <a href="#x" class="internal alias">X</a> | <a href="#y" class="internal alias">Y</a> | <a href="#z" class="internal alias">Z</a></p>
+<h2 id></h2>
+<ul>
+<li><a href="./Assembly#assembly" class="internal alias" data-slug="Assembly">Assembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#assembly" class="internal alias" data-slug="Assembly">Assembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#assembly" class="internal alias" data-slug="Assembly">Assembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#assembly" class="internal alias" data-slug="Assembly">Assembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#assembly" class="internal alias" data-slug="Assembly">Assembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Bspline#bspline" class="internal alias" data-slug="Bspline">Bspline</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#bspline3d" class="internal alias" data-slug="Bspline3D">Bspline3D</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Circle#circle" class="internal alias" data-slug="Circle">Circle</a> — in <a href="./Circle" class="internal" data-slug="Circle">Circle</a></li>
+<li><a href="./CircularArc#circulararc" class="internal alias" data-slug="CircularArc">CircularArc</a> — in <a href="./CircularArc" class="internal" data-slug="CircularArc">CircularArc</a></li>
+<li><a href="./CircularArc#circulararc" class="internal alias" data-slug="CircularArc">CircularArc</a> — in <a href="./CircularArc" class="internal" data-slug="CircularArc">CircularArc</a></li>
+<li><a href="./CircularArc3D#circulararc3d" class="internal alias" data-slug="CircularArc3D">CircularArc3D</a> — in <a href="./CircularArc3D" class="internal" data-slug="CircularArc3D">CircularArc3D</a></li>
+<li><a href="./CircularArc3D#circulararc3d" class="internal alias" data-slug="CircularArc3D">CircularArc3D</a> — in <a href="./CircularArc3D" class="internal" data-slug="CircularArc3D">CircularArc3D</a></li>
+<li><a href="./Ellipse#ellipse" class="internal alias" data-slug="Ellipse">Ellipse</a> — in <a href="./Ellipse" class="internal" data-slug="Ellipse">Ellipse</a></li>
+<li><a href="./EllipticalArc#ellipticalarc" class="internal alias" data-slug="EllipticalArc">EllipticalArc</a> — in <a href="./EllipticalArc" class="internal" data-slug="EllipticalArc">EllipticalArc</a></li>
+<li><a href="./GlobalParameters#globalparameters" class="internal alias" data-slug="GlobalParameters">GlobalParameters</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./GlobalParameters#globalparameters" class="internal alias" data-slug="GlobalParameters">GlobalParameters</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./GlobalParameters#globalparameters" class="internal alias" data-slug="GlobalParameters">GlobalParameters</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Line#line" class="internal alias" data-slug="Line">Line</a> — in <a href="./Line" class="internal" data-slug="Line">Line</a></li>
+<li><a href="./Line3D#line3d" class="internal alias" data-slug="Line3D">Line3D</a> — in <a href="./Line3D" class="internal" data-slug="Line3D">Line3D</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#part" class="internal alias" data-slug="Part">Part</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Polyline#polyline" class="internal alias" data-slug="Polyline">Polyline</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline#polyline" class="internal alias" data-slug="Polyline">Polyline</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#polyline3d" class="internal alias" data-slug="Polyline3D">Polyline3D</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Polyline3D#polyline3d" class="internal alias" data-slug="Polyline3D">Polyline3D</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./PolylinePoint#polylinepoint" class="internal alias" data-slug="PolylinePoint">PolylinePoint</a> — in <a href="./PolylinePoint" class="internal" data-slug="PolylinePoint">PolylinePoint</a></li>
+<li><a href="./PolylinePoint#polylinepoint" class="internal alias" data-slug="PolylinePoint">PolylinePoint</a> — in <a href="./PolylinePoint" class="internal" data-slug="PolylinePoint">PolylinePoint</a></li>
+<li><a href="./PolylinePoint3D#polylinepoint3d" class="internal alias" data-slug="PolylinePoint3D">PolylinePoint3D</a> — in <a href="./PolylinePoint3D" class="internal" data-slug="PolylinePoint3D">PolylinePoint3D</a></li>
+<li><a href="./PolylinePoint3D#polylinepoint3d" class="internal alias" data-slug="PolylinePoint3D">PolylinePoint3D</a> — in <a href="./PolylinePoint3D" class="internal" data-slug="PolylinePoint3D">PolylinePoint3D</a></li>
+<li><a href="./SketchPoint#sketchpoint" class="internal alias" data-slug="SketchPoint">SketchPoint</a> — in <a href="./SketchPoint" class="internal" data-slug="SketchPoint">SketchPoint</a></li>
+<li><a href="./SketchPoint3D#sketchpoint3d" class="internal alias" data-slug="SketchPoint3D">SketchPoint3D</a> — in <a href="./SketchPoint3D" class="internal" data-slug="SketchPoint3D">SketchPoint3D</a></li>
+<li><a href="./Windows#windows" class="internal alias" data-slug="Windows">Windows</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+</ul>
+<h2 id="a">A<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Configuration#activate" class="internal alias" data-slug="Configuration">Activate</a> — in <a href="./Configuration" class="internal" data-slug="Configuration">Configuration</a></li>
+<li><a href="./Part#add3dsketch" class="internal alias" data-slug="Part">Add3DSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addalignconstraint" class="internal alias" data-slug="Assembly">AddAlignConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addalignconstraint" class="internal alias" data-slug="Assembly">AddAlignConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addalignconstraint2" class="internal alias" data-slug="Assembly">AddAlignConstraint2</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addangleconstraint" class="internal alias" data-slug="Assembly">AddAngleConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addangleconstraint" class="internal alias" data-slug="Assembly">AddAngleConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addangleconstraint2" class="internal alias" data-slug="Assembly">AddAngleConstraint2</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Polyline#addarc" class="internal alias" data-slug="Polyline">AddArc</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Sketch#addarc" class="internal alias" data-slug="Sketch">AddArc</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addarc" class="internal alias" data-slug="Sketch3D">AddArc</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch#addarccenterstartangle" class="internal alias" data-slug="Sketch">AddArcCenterStartAngle</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addarccenterstartend" class="internal alias" data-slug="Sketch">AddArcCenterStartEnd</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addarccenterstartend" class="internal alias" data-slug="Sketch3D">AddArcCenterStartEnd</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Assembly#addaxis" class="internal alias" data-slug="Assembly">AddAxis</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addaxis" class="internal alias" data-slug="Assembly">AddAxis</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addaxis" class="internal alias" data-slug="Part">AddAxis</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addaxis" class="internal alias" data-slug="Part">AddAxis</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addaxis" class="internal alias" data-slug="Part">AddAxis</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addaxis" class="internal alias" data-slug="Part">AddAxis</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#addbspline" class="internal alias" data-slug="Sketch">AddBspline</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addbspline" class="internal alias" data-slug="Sketch">AddBspline</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addbspline" class="internal alias" data-slug="Sketch">AddBspline</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addbspline" class="internal alias" data-slug="Sketch3D">AddBspline</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch3D#addbspline" class="internal alias" data-slug="Sketch3D">AddBspline</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Part#addchamfer" class="internal alias" data-slug="Part">AddChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addchamfer" class="internal alias" data-slug="Part">AddChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addchamfer" class="internal alias" data-slug="Part">AddChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addchamfer" class="internal alias" data-slug="Part">AddChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addchamferangle" class="internal alias" data-slug="Part">AddChamferAngle</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addchamferangle" class="internal alias" data-slug="Part">AddChamferAngle</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Polyline#addcircle" class="internal alias" data-slug="Polyline">AddCircle</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Sketch#addcircle" class="internal alias" data-slug="Sketch">AddCircle</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addcircle" class="internal alias" data-slug="Sketch">AddCircle</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Assembly#addconfiguration" class="internal alias" data-slug="Assembly">AddConfiguration</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addconfiguration" class="internal alias" data-slug="Assembly">AddConfiguration</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#addconfiguration" class="internal alias" data-slug="GlobalParameters">AddConfiguration</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./GlobalParameters#addconfiguration" class="internal alias" data-slug="GlobalParameters">AddConfiguration</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#addconfiguration" class="internal alias" data-slug="Part">AddConfiguration</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addconfiguration" class="internal alias" data-slug="Part">AddConfiguration</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#addconstraint" class="internal alias" data-slug="Sketch">AddConstraint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addconstraint" class="internal alias" data-slug="Sketch">AddConstraint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#adddimension" class="internal alias" data-slug="Sketch">AddDimension</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#adddimension" class="internal alias" data-slug="Sketch">AddDimension</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#adddimension" class="internal alias" data-slug="Sketch">AddDimension</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addellipse" class="internal alias" data-slug="Sketch">AddEllipse</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addellipse" class="internal alias" data-slug="Sketch">AddEllipse</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addellipse" class="internal alias" data-slug="Sketch">AddEllipse</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addellipticalarc" class="internal alias" data-slug="Sketch">AddEllipticalArc</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addellipticalarc" class="internal alias" data-slug="Sketch">AddEllipticalArc</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Part#addextrudeboss" class="internal alias" data-slug="Part">AddExtrudeBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addextrudeboss" class="internal alias" data-slug="Part">AddExtrudeBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addextrudecut" class="internal alias" data-slug="Part">AddExtrudeCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addextrudecut" class="internal alias" data-slug="Part">AddExtrudeCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addfastenerconstraint" class="internal alias" data-slug="Assembly">AddFastenerConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addfastenerconstraint2" class="internal alias" data-slug="Assembly">AddFastenerConstraint2</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Sketch#addfigure" class="internal alias" data-slug="Sketch">AddFigure</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Part#addfillet" class="internal alias" data-slug="Part">AddFillet</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addfillet" class="internal alias" data-slug="Part">AddFillet</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addfillet" class="internal alias" data-slug="Part">AddFillet</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgear" class="internal alias" data-slug="Part">AddGear</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addgearconstraint" class="internal alias" data-slug="Assembly">AddGearConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addgeardn" class="internal alias" data-slug="Part">AddGearDN</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgeardn" class="internal alias" data-slug="Part">AddGearDN</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgeardp" class="internal alias" data-slug="Part">AddGearDP</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgeardp" class="internal alias" data-slug="Part">AddGearDP</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgearnp" class="internal alias" data-slug="Part">AddGearNP</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addgearnp" class="internal alias" data-slug="Part">AddGearNP</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#addline" class="internal alias" data-slug="Sketch">AddLine</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addline" class="internal alias" data-slug="Sketch">AddLine</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addline" class="internal alias" data-slug="Sketch">AddLine</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addline" class="internal alias" data-slug="Sketch3D">AddLine</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch3D#addline" class="internal alias" data-slug="Sketch3D">AddLine</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch3D#addline" class="internal alias" data-slug="Sketch3D">AddLine</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch#addlines" class="internal alias" data-slug="Sketch">AddLines</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addlines" class="internal alias" data-slug="Sketch3D">AddLines</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Part#addloftboss" class="internal alias" data-slug="Part">AddLoftBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addloftboss" class="internal alias" data-slug="Part">AddLoftBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addloftcut" class="internal alias" data-slug="Part">AddLoftCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addloftcut" class="internal alias" data-slug="Part">AddLoftCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addmateconstraint" class="internal alias" data-slug="Assembly">AddMateConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addmateconstraint" class="internal alias" data-slug="Assembly">AddMateConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addmateconstraint2" class="internal alias" data-slug="Assembly">AddMateConstraint2</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addnewpart" class="internal alias" data-slug="Assembly">AddNewPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addnewsubassembly" class="internal alias" data-slug="Assembly">AddNewSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addorientconstraint" class="internal alias" data-slug="Assembly">AddOrientConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addorientconstraint" class="internal alias" data-slug="Assembly">AddOrientConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addparameter" class="internal alias" data-slug="Assembly">AddParameter</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addparameter" class="internal alias" data-slug="Assembly">AddParameter</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#addparameter" class="internal alias" data-slug="GlobalParameters">AddParameter</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./GlobalParameters#addparameter" class="internal alias" data-slug="GlobalParameters">AddParameter</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#addparameter" class="internal alias" data-slug="Part">AddParameter</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addparameter" class="internal alias" data-slug="Part">AddParameter</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addparameter" class="internal alias" data-slug="Part">AddParameter</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpart" class="internal alias" data-slug="Assembly">AddPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addplane" class="internal alias" data-slug="Assembly">AddPlane</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addplane" class="internal alias" data-slug="Assembly">AddPlane</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addplane" class="internal alias" data-slug="Assembly">AddPlane</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addplane" class="internal alias" data-slug="Assembly">AddPlane</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addplane" class="internal alias" data-slug="Part">AddPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addplane" class="internal alias" data-slug="Part">AddPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addplane" class="internal alias" data-slug="Part">AddPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addplane" class="internal alias" data-slug="Part">AddPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addplane" class="internal alias" data-slug="Part">AddPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#addpoint" class="internal alias" data-slug="AssembledPart">AddPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addpoint" class="internal alias" data-slug="Assembly">AddPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addpoint" class="internal alias" data-slug="Part">AddPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Polyline#addpoint" class="internal alias" data-slug="Polyline">AddPoint</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#addpoint" class="internal alias" data-slug="Polyline3D">AddPoint</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Sketch#addpoint" class="internal alias" data-slug="Sketch">AddPoint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addpoint" class="internal alias" data-slug="Sketch">AddPoint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addpoint" class="internal alias" data-slug="Sketch">AddPoint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addpoint" class="internal alias" data-slug="Sketch3D">AddPoint</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Sketch3D#addpoint" class="internal alias" data-slug="Sketch3D">AddPoint</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./AssembledPart#addpointfromcircularedge" class="internal alias" data-slug="AssembledPart">AddPointFromCircularEdge</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Assembly#addpointfromcircularedge" class="internal alias" data-slug="Assembly">AddPointFromCircularEdge</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addpointfromcircularedge" class="internal alias" data-slug="Part">AddPointFromCircularEdge</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#addpointfromtoroidalface" class="internal alias" data-slug="AssembledPart">AddPointFromToroidalFace</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Assembly#addpointfromtoroidalface" class="internal alias" data-slug="Assembly">AddPointFromToroidalFace</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addpointfromtoroidalface" class="internal alias" data-slug="Part">AddPointFromToroidalFace</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addpoints" class="internal alias" data-slug="Assembly">AddPoints</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addpoints" class="internal alias" data-slug="Part">AddPoints</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#addpolygon" class="internal alias" data-slug="Sketch">AddPolygon</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#addpolyhole" class="internal alias" data-slug="Sketch">AddPolyhole</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Polyline#addpolyline" class="internal alias" data-slug="Polyline">AddPolyline</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#addpolyline" class="internal alias" data-slug="Polyline3D">AddPolyline</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Sketch#addpolyline" class="internal alias" data-slug="Sketch">AddPolyline</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#addpolyline" class="internal alias" data-slug="Sketch3D">AddPolyline</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Assembly#addrackandpinionconstraint" class="internal alias" data-slug="Assembly">AddRackAndPinionConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Sketch#addrectangle" class="internal alias" data-slug="Sketch">AddRectangle</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Part#addrevolveboss" class="internal alias" data-slug="Part">AddRevolveBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addrevolvecut" class="internal alias" data-slug="Part">AddRevolveCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addscrewconstraint" class="internal alias" data-slug="Assembly">AddScrewConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addsketch" class="internal alias" data-slug="Part">AddSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addsubassembly" class="internal alias" data-slug="Assembly">AddSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addsweepboss" class="internal alias" data-slug="Part">AddSweepBoss</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addsweepcut" class="internal alias" data-slug="Part">AddSweepCut</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#addtangentconstraint" class="internal alias" data-slug="Assembly">AddTangentConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#addtangentconstraint" class="internal alias" data-slug="Assembly">AddTangentConstraint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#addvertexchamfer" class="internal alias" data-slug="Part">AddVertexChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#addvertexchamfer" class="internal alias" data-slug="Part">AddVertexChamfer</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#anchorpart" class="internal alias" data-slug="Assembly">AnchorPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#anchorpart" class="internal alias" data-slug="Assembly">AnchorPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#anchorsubassembly" class="internal alias" data-slug="Assembly">AnchorSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./AssembledPart#assemblypointtopartpoint" class="internal alias" data-slug="AssembledPart">AssemblyPointtoPartPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Parameter#attachtoexcel" class="internal alias" data-slug="Parameter">AttachToExcel</a> — in <a href="./Parameter" class="internal" data-slug="Parameter">Parameter</a></li>
+</ul>
+<h2 id="c">C<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Polyline#clone" class="internal alias" data-slug="Polyline">Clone</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline#clone" class="internal alias" data-slug="Polyline">Clone</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#clone" class="internal alias" data-slug="Polyline3D">Clone</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Polyline3D#clone" class="internal alias" data-slug="Polyline3D">Clone</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Assembly#close" class="internal alias" data-slug="Assembly">Close</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#close" class="internal alias" data-slug="GlobalParameters">Close</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#close" class="internal alias" data-slug="Part">Close</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#closeform" class="internal alias" data-slug="Windows">CloseForm</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./CSharp#compile" class="internal alias" data-slug="CSharp">Compile</a> — in <a href="./CSharp" class="internal" data-slug="CSharp">CSharp</a></li>
+<li><a href="./CSharp#compileandrun" class="internal alias" data-slug="CSharp">CompileAndRun</a> — in <a href="./CSharp" class="internal" data-slug="CSharp">CSharp</a></li>
+<li><a href="./CSharp#compileandrun" class="internal alias" data-slug="CSharp">CompileAndRun</a> — in <a href="./CSharp" class="internal" data-slug="CSharp">CSharp</a></li>
+<li><a href="./Sketch#copyfrom" class="internal alias" data-slug="Sketch">CopyFrom</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#copyfrom" class="internal alias" data-slug="Sketch">CopyFrom</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Assembly#createuniquename" class="internal alias" data-slug="Assembly">CreateUniqueName</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+</ul>
+<h2 id="d">D<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Windows#disableinput" class="internal alias" data-slug="Windows">DisableInput</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Assembly#displayunits" class="internal alias" data-slug="Assembly">DisplayUnits</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#displayunits" class="internal alias" data-slug="Part">DisplayUnits</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Face#distanceto" class="internal alias" data-slug="Face">DistanceTo</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Assembly#duplicatepart" class="internal alias" data-slug="Assembly">DuplicatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatepart" class="internal alias" data-slug="Assembly">DuplicatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatepart" class="internal alias" data-slug="Assembly">DuplicatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatepart" class="internal alias" data-slug="Assembly">DuplicatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatesubassembly" class="internal alias" data-slug="Assembly">DuplicateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatesubassembly" class="internal alias" data-slug="Assembly">DuplicateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatesubassembly" class="internal alias" data-slug="Assembly">DuplicateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#duplicatesubassembly" class="internal alias" data-slug="Assembly">DuplicateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+</ul>
+<h2 id="e">E<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Windows#enableinput" class="internal alias" data-slug="Windows">EnableInput</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Windows#errordialog" class="internal alias" data-slug="Windows">ErrorDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Assembly#exportbip" class="internal alias" data-slug="Assembly">ExportBIP</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportbip" class="internal alias" data-slug="Part">ExportBIP</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#exportiges" class="internal alias" data-slug="Assembly">ExportIGES</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportiges" class="internal alias" data-slug="Part">ExportIGES</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#exportrotatedstl" class="internal alias" data-slug="Part">ExportRotatedSTL</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#exportsat" class="internal alias" data-slug="Assembly">ExportSAT</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportsat" class="internal alias" data-slug="Part">ExportSAT</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#exportstep203" class="internal alias" data-slug="Assembly">ExportSTEP203</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportstep203" class="internal alias" data-slug="Part">ExportSTEP203</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#exportstep214" class="internal alias" data-slug="Assembly">ExportSTEP214</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportstep214" class="internal alias" data-slug="Part">ExportSTEP214</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#exportstl" class="internal alias" data-slug="Assembly">ExportSTL</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#exportstl" class="internal alias" data-slug="Part">ExportSTL</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#exportsvg" class="internal alias" data-slug="Sketch">ExportSVG</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#exportsvg" class="internal alias" data-slug="Sketch">ExportSVG</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#exportsvg" class="internal alias" data-slug="Sketch">ExportSVG</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+</ul>
+<h2 id="f">F<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#f" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Polyline#findintersection" class="internal alias" data-slug="Polyline">FindIntersection</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline#findintersection" class="internal alias" data-slug="Polyline">FindIntersection</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline#findintersectionwithcircle" class="internal alias" data-slug="Polyline">FindIntersectionWithCircle</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Sketch#fromxml" class="internal alias" data-slug="Sketch">FromXml</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#fromxml" class="internal alias" data-slug="Sketch3D">FromXml</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+</ul>
+<h2 id="g">G<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#g" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Part#get3dsketch" class="internal alias" data-slug="Part">Get3DSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#getactiveconfiguration" class="internal alias" data-slug="Assembly">GetActiveConfiguration</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#getactiveconfiguration" class="internal alias" data-slug="GlobalParameters">GetActiveConfiguration</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#getactiveconfiguration" class="internal alias" data-slug="Part">GetActiveConfiguration</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Face#getadjoiningfaces" class="internal alias" data-slug="Face">GetAdjoiningFaces</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Face#getarea" class="internal alias" data-slug="Face">GetArea</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./AssembledPart#getassembly" class="internal alias" data-slug="AssembledPart">GetAssembly</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#getassemblyboundingbox" class="internal alias" data-slug="AssembledPart">GetAssemblyBoundingBox</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledPart#getassemblyvertices" class="internal alias" data-slug="AssembledPart">GetAssemblyVertices</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Assembly#getaxis" class="internal alias" data-slug="Assembly">GetAxis</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#getaxis" class="internal alias" data-slug="Part">GetAxis</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#getboundingbox" class="internal alias" data-slug="Part">GetBoundingBox</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#getconfiguration" class="internal alias" data-slug="AssembledPart">GetConfiguration</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledSubAssembly#getconfiguration" class="internal alias" data-slug="AssembledSubAssembly">GetConfiguration</a> — in <a href="./AssembledSubAssembly" class="internal" data-slug="AssembledSubAssembly">AssembledSubAssembly</a></li>
+<li><a href="./Assembly#getconfiguration" class="internal alias" data-slug="Assembly">GetConfiguration</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#getconfiguration" class="internal alias" data-slug="GlobalParameters">GetConfiguration</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#getconfiguration" class="internal alias" data-slug="Part">GetConfiguration</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Point#getcoordinates" class="internal alias" data-slug="Point">GetCoordinates</a> — in <a href="./Point" class="internal" data-slug="Point">Point</a></li>
+<li><a href="./Assembly#getcustomproperty" class="internal alias" data-slug="Assembly">GetCustomProperty</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#getcustomproperty" class="internal alias" data-slug="Part">GetCustomProperty</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#getdisplayedform" class="internal alias" data-slug="Windows">GetDisplayedForm</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./AssembledPart#getedge" class="internal alias" data-slug="AssembledPart">GetEdge</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Part#getedge" class="internal alias" data-slug="Part">GetEdge</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#getedges" class="internal alias" data-slug="AssembledPart">GetEdges</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Face#getedges" class="internal alias" data-slug="Face">GetEdges</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Part#getedges" class="internal alias" data-slug="Part">GetEdges</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#getface" class="internal alias" data-slug="AssembledPart">GetFace</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Part#getface" class="internal alias" data-slug="Part">GetFace</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./AssembledPart#getfaces" class="internal alias" data-slug="AssembledPart">GetFaces</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Part#getfaces" class="internal alias" data-slug="Part">GetFaces</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#getfeature" class="internal alias" data-slug="Part">GetFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#getinputvalue" class="internal alias" data-slug="Windows">GetInputValue</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./AssembledPart#getmappedoccurrence" class="internal alias" data-slug="AssembledPart">GetMappedOccurrence</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./AssembledSubAssembly#getmappedoccurrence" class="internal alias" data-slug="AssembledSubAssembly">GetMappedOccurrence</a> — in <a href="./AssembledSubAssembly" class="internal" data-slug="AssembledSubAssembly">AssembledSubAssembly</a></li>
+<li><a href="./Bspline#getnormalat" class="internal alias" data-slug="Bspline">GetNormalAt</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#getnormalat" class="internal alias" data-slug="Bspline3D">GetNormalAt</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./IAxis#getoccurrence" class="internal alias" data-slug="IAxis">GetOccurrence</a> — in <a href="./IAxis" class="internal" data-slug="IAxis">IAxis</a></li>
+<li><a href="./IPlane#getoccurrence" class="internal alias" data-slug="IPlane">GetOccurrence</a> — in <a href="./IPlane" class="internal" data-slug="IPlane">IPlane</a></li>
+<li><a href="./IPoint#getoccurrence" class="internal alias" data-slug="IPoint">GetOccurrence</a> — in <a href="./IPoint" class="internal" data-slug="IPoint">IPoint</a></li>
+<li><a href="./Assembly#getparameter" class="internal alias" data-slug="Assembly">GetParameter</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#getparameter" class="internal alias" data-slug="GlobalParameters">GetParameter</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#getparameter" class="internal alias" data-slug="Part">GetParameter</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#getpart" class="internal alias" data-slug="Assembly">GetPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Axis#getpart" class="internal alias" data-slug="Axis">GetPart</a> — in <a href="./Axis" class="internal" data-slug="Axis">Axis</a></li>
+<li><a href="./Edge#getpart" class="internal alias" data-slug="Edge">GetPart</a> — in <a href="./Edge" class="internal" data-slug="Edge">Edge</a></li>
+<li><a href="./Face#getpart" class="internal alias" data-slug="Face">GetPart</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Plane#getpart" class="internal alias" data-slug="Plane">GetPart</a> — in <a href="./Plane" class="internal" data-slug="Plane">Plane</a></li>
+<li><a href="./Point#getpart" class="internal alias" data-slug="Point">GetPart</a> — in <a href="./Point" class="internal" data-slug="Point">Point</a></li>
+<li><a href="./Sketch#getpart" class="internal alias" data-slug="Sketch">GetPart</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#getpart" class="internal alias" data-slug="Sketch3D">GetPart</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Vertex#getpart" class="internal alias" data-slug="Vertex">GetPart</a> — in <a href="./Vertex" class="internal" data-slug="Vertex">Vertex</a></li>
+<li><a href="./Assembly#getpartorientation" class="internal alias" data-slug="Assembly">GetPartOrientation</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#getpartorientation" class="internal alias" data-slug="Assembly">GetPartOrientation</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./ThreeD#getperpendicularvector" class="internal alias" data-slug="ThreeD">GetPerpendicularVector</a> — in <a href="./ThreeD" class="internal" data-slug="ThreeD">ThreeD</a></li>
+<li><a href="./TwoD#getperpendicularvector" class="internal alias" data-slug="TwoD">GetPerpendicularVector</a> — in <a href="./TwoD" class="internal" data-slug="TwoD">TwoD</a></li>
+<li><a href="./Assembly#getplane" class="internal alias" data-slug="Assembly">GetPlane</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#getplane" class="internal alias" data-slug="Part">GetPlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#getpoint" class="internal alias" data-slug="Assembly">GetPoint</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#getpoint" class="internal alias" data-slug="Part">GetPoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Bspline#getpointat" class="internal alias" data-slug="Bspline">GetPointAt</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#getpointat" class="internal alias" data-slug="Bspline3D">GetPointAt</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./AssembledSubAssembly#getselectionassembly" class="internal alias" data-slug="AssembledSubAssembly">GetSelectionAssembly</a> — in <a href="./AssembledSubAssembly" class="internal" data-slug="AssembledSubAssembly">AssembledSubAssembly</a></li>
+<li><a href="./Axis#getselectionassembly" class="internal alias" data-slug="Axis">GetSelectionAssembly</a> — in <a href="./Axis" class="internal" data-slug="Axis">Axis</a></li>
+<li><a href="./Edge#getselectionassembly" class="internal alias" data-slug="Edge">GetSelectionAssembly</a> — in <a href="./Edge" class="internal" data-slug="Edge">Edge</a></li>
+<li><a href="./Face#getselectionassembly" class="internal alias" data-slug="Face">GetSelectionAssembly</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Part#getselectionassembly" class="internal alias" data-slug="Part">GetSelectionAssembly</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Plane#getselectionassembly" class="internal alias" data-slug="Plane">GetSelectionAssembly</a> — in <a href="./Plane" class="internal" data-slug="Plane">Plane</a></li>
+<li><a href="./Point#getselectionassembly" class="internal alias" data-slug="Point">GetSelectionAssembly</a> — in <a href="./Point" class="internal" data-slug="Point">Point</a></li>
+<li><a href="./Sketch#getselectionassembly" class="internal alias" data-slug="Sketch">GetSelectionAssembly</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#getselectionassembly" class="internal alias" data-slug="Sketch3D">GetSelectionAssembly</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Vertex#getselectionassembly" class="internal alias" data-slug="Vertex">GetSelectionAssembly</a> — in <a href="./Vertex" class="internal" data-slug="Vertex">Vertex</a></li>
+<li><a href="./Part#getsketch" class="internal alias" data-slug="Part">GetSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#getsubassembly" class="internal alias" data-slug="Assembly">GetSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Sketch#getsurface" class="internal alias" data-slug="Sketch">GetSurface</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Assembly#getuserdata" class="internal alias" data-slug="Assembly">GetUserData</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#getuserdata" class="internal alias" data-slug="Part">GetUserData</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#getvertex" class="internal alias" data-slug="Part">GetVertex</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Edge#getvertices" class="internal alias" data-slug="Edge">GetVertices</a> — in <a href="./Edge" class="internal" data-slug="Edge">Edge</a></li>
+<li><a href="./Face#getvertices" class="internal alias" data-slug="Face">GetVertices</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Part#getvertices" class="internal alias" data-slug="Part">GetVertices</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Bspline#getx" class="internal alias" data-slug="Bspline">GetX</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#getx" class="internal alias" data-slug="Bspline3D">GetX</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Bspline#gety" class="internal alias" data-slug="Bspline">GetY</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#gety" class="internal alias" data-slug="Bspline3D">GetY</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Bspline3D#getz" class="internal alias" data-slug="Bspline3D">GetZ</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Sketch#globaltopoint" class="internal alias" data-slug="Sketch">GlobaltoPoint</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+</ul>
+<h2 id="h">H<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#h" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Axis#hide" class="internal alias" data-slug="Axis">Hide</a> — in <a href="./Axis" class="internal" data-slug="Axis">Axis</a></li>
+<li><a href="./Plane#hide" class="internal alias" data-slug="Plane">Hide</a> — in <a href="./Plane" class="internal" data-slug="Plane">Plane</a></li>
+<li><a href="./Point#hide" class="internal alias" data-slug="Point">Hide</a> — in <a href="./Point" class="internal" data-slug="Point">Point</a></li>
+<li><a href="./Part#hidefeature" class="internal alias" data-slug="Part">HideFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#hidefeature" class="internal alias" data-slug="Part">HideFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#hidepart" class="internal alias" data-slug="Assembly">HidePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#hidepart" class="internal alias" data-slug="Assembly">HidePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#hidesubassembly" class="internal alias" data-slug="Assembly">HideSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+</ul>
+<h2 id="i">I<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#i" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Sketch#importsvg" class="internal alias" data-slug="Sketch">ImportSVG</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#importsvg" class="internal alias" data-slug="Sketch">ImportSVG</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Windows#infodialog" class="internal alias" data-slug="Windows">InfoDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Polyline#insertpoint" class="internal alias" data-slug="Polyline">InsertPoint</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#insertpoint" class="internal alias" data-slug="Polyline3D">InsertPoint</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Part#isopen" class="internal alias" data-slug="Part">IsOpen</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Face#isparallel" class="internal alias" data-slug="Face">IsParallel</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+<li><a href="./Plane#isparallel" class="internal alias" data-slug="Plane">IsParallel</a> — in <a href="./Plane" class="internal" data-slug="Plane">Plane</a></li>
+<li><a href="./Polyline#ispointonline" class="internal alias" data-slug="Polyline">IsPointOnLine</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#ispointonline" class="internal alias" data-slug="Polyline3D">IsPointOnLine</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Face#isrectangle" class="internal alias" data-slug="Face">IsRectangle</a> — in <a href="./Face" class="internal" data-slug="Face">Face</a></li>
+</ul>
+<h2 id="j">J<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#j" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Polyline#join" class="internal alias" data-slug="Polyline">Join</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#join" class="internal alias" data-slug="Polyline3D">Join</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+</ul>
+<h2 id="l">L<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Sketch#loadxml" class="internal alias" data-slug="Sketch">LoadXml</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#loadxml" class="internal alias" data-slug="Sketch3D">LoadXml</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Configuration#lockall" class="internal alias" data-slug="Configuration">LockAll</a> — in <a href="./Configuration" class="internal" data-slug="Configuration">Configuration</a></li>
+</ul>
+<h2 id="m">M<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#m" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Assembly#movepart" class="internal alias" data-slug="Assembly">MovePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#movepart" class="internal alias" data-slug="Assembly">MovePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#moveparts" class="internal alias" data-slug="Assembly">MoveParts</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#movesubassemblies" class="internal alias" data-slug="Assembly">MoveSubAssemblies</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#movesubassembly" class="internal alias" data-slug="Assembly">MoveSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#movesubassembly" class="internal alias" data-slug="Assembly">MoveSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+</ul>
+<h2 id="n">N<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#n" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Part#nonuniformscale" class="internal alias" data-slug="Part">NonUniformScale</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./TwoD#normalizevector" class="internal alias" data-slug="TwoD">NormalizeVector</a> — in <a href="./TwoD" class="internal" data-slug="TwoD">TwoD</a></li>
+</ul>
+<h2 id="o">O<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#o" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Polyline#offset" class="internal alias" data-slug="Polyline">Offset</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#offset" class="internal alias" data-slug="Polyline3D">Offset</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./PolylinePoint#offset" class="internal alias" data-slug="PolylinePoint">Offset</a> — in <a href="./PolylinePoint" class="internal" data-slug="PolylinePoint">PolylinePoint</a></li>
+<li><a href="./PolylinePoint3D#offset" class="internal alias" data-slug="PolylinePoint3D">Offset</a> — in <a href="./PolylinePoint3D" class="internal" data-slug="PolylinePoint3D">PolylinePoint3D</a></li>
+<li><a href="./Windows#openfiledialog" class="internal alias" data-slug="Windows">OpenFileDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Windows#optionsdialog" class="internal alias" data-slug="Windows">OptionsDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Windows#optionsdialog" class="internal alias" data-slug="Windows">OptionsDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+</ul>
+<h2 id="p">P<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#p" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./AssembledPart#partpointtoassemblypoint" class="internal alias" data-slug="AssembledPart">PartPointtoAssemblyPoint</a> — in <a href="./AssembledPart" class="internal" data-slug="AssembledPart">AssembledPart</a></li>
+<li><a href="./Assembly#pauseupdating" class="internal alias" data-slug="Assembly">PauseUpdating</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#pauseupdating" class="internal alias" data-slug="Part">PauseUpdating</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./IPoint#pointobject" class="internal alias" data-slug="IPoint">PointObject</a> — in <a href="./IPoint" class="internal" data-slug="IPoint">IPoint</a></li>
+<li><a href="./Sketch#pointtoglobal" class="internal alias" data-slug="Sketch">PointtoGlobal</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+</ul>
+<h2 id="q">Q<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Windows#questiondialog" class="internal alias" data-slug="Windows">QuestionDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+</ul>
+<h2 id="r">R<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#r" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Assembly#regenerate" class="internal alias" data-slug="Assembly">Regenerate</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#regenerate" class="internal alias" data-slug="Part">Regenerate</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Polyline#removeduplicates" class="internal alias" data-slug="Polyline">RemoveDuplicates</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#removeduplicates" class="internal alias" data-slug="Polyline3D">RemoveDuplicates</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Part#removefeature" class="internal alias" data-slug="Part">RemoveFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#removefeature" class="internal alias" data-slug="Part">RemoveFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#removeplane" class="internal alias" data-slug="Part">RemovePlane</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#removepoint" class="internal alias" data-slug="Part">RemovePoint</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#removesketch" class="internal alias" data-slug="Part">RemoveSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#removesketch" class="internal alias" data-slug="Part">RemoveSketch</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#resumeupdating" class="internal alias" data-slug="Assembly">ResumeUpdating</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#resumeupdating" class="internal alias" data-slug="Part">ResumeUpdating</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#rotatepart" class="internal alias" data-slug="Assembly">RotatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#rotatepart" class="internal alias" data-slug="Assembly">RotatePart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#rotateparts" class="internal alias" data-slug="Assembly">RotateParts</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./TwoD#rotatepoint" class="internal alias" data-slug="TwoD">RotatePoint</a> — in <a href="./TwoD" class="internal" data-slug="TwoD">TwoD</a></li>
+<li><a href="./Assembly#rotatesubassemblies" class="internal alias" data-slug="Assembly">RotateSubAssemblies</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#rotatesubassembly" class="internal alias" data-slug="Assembly">RotateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#rotatesubassembly" class="internal alias" data-slug="Assembly">RotateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#rotatesubassembly" class="internal alias" data-slug="Assembly">RotateSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Polyline#rotatez" class="internal alias" data-slug="Polyline">RotateZ</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./PolylinePoint#rotatez" class="internal alias" data-slug="PolylinePoint">RotateZ</a> — in <a href="./PolylinePoint" class="internal" data-slug="PolylinePoint">PolylinePoint</a></li>
+<li><a href="./CSharp#run" class="internal alias" data-slug="CSharp">Run</a> — in <a href="./CSharp" class="internal" data-slug="CSharp">CSharp</a></li>
+<li><a href="./CSharp#run" class="internal alias" data-slug="CSharp">Run</a> — in <a href="./CSharp" class="internal" data-slug="CSharp">CSharp</a></li>
+</ul>
+<h2 id="s">S<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#s" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Assembly#save" class="internal alias" data-slug="Assembly">Save</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#save" class="internal alias" data-slug="Assembly">Save</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#save" class="internal alias" data-slug="GlobalParameters">Save</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./GlobalParameters#save" class="internal alias" data-slug="GlobalParameters">Save</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#save" class="internal alias" data-slug="Part">Save</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#save" class="internal alias" data-slug="Part">Save</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#saveall" class="internal alias" data-slug="Assembly">SaveAll</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#saveas" class="internal alias" data-slug="Assembly">SaveAs</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./GlobalParameters#saveas" class="internal alias" data-slug="GlobalParameters">SaveAs</a> — in <a href="./GlobalParameters" class="internal" data-slug="GlobalParameters">GlobalParameters</a></li>
+<li><a href="./Part#saveas" class="internal alias" data-slug="Part">SaveAs</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#savefiledialog" class="internal alias" data-slug="Windows">SaveFileDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Assembly#savesnapshot" class="internal alias" data-slug="Assembly">SaveSnapshot</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#savesnapshot" class="internal alias" data-slug="Part">SaveSnapshot</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#savethumbnail" class="internal alias" data-slug="Assembly">SaveThumbnail</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#savethumbnail" class="internal alias" data-slug="Part">SaveThumbnail</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Sketch#savetoxml" class="internal alias" data-slug="Sketch">SavetoXml</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#savetoxml" class="internal alias" data-slug="Sketch3D">SavetoXml</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./Part#scale" class="internal alias" data-slug="Part">Scale</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./PolylinePoint#scale" class="internal alias" data-slug="PolylinePoint">Scale</a> — in <a href="./PolylinePoint" class="internal" data-slug="PolylinePoint">PolylinePoint</a></li>
+<li><a href="./PolylinePoint3D#scale" class="internal alias" data-slug="PolylinePoint3D">Scale</a> — in <a href="./PolylinePoint3D" class="internal" data-slug="PolylinePoint3D">PolylinePoint3D</a></li>
+<li><a href="./Part#select" class="internal alias" data-slug="Part">Select</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#select" class="internal alias" data-slug="Part">Select</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#selectfolderdialog" class="internal alias" data-slug="Windows">SelectFolderDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Feature#setcolor" class="internal alias" data-slug="Feature">SetColor</a> — in <a href="./Feature" class="internal" data-slug="Feature">Feature</a></li>
+<li><a href="./Part#setcolor" class="internal alias" data-slug="Part">SetColor</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#setcustomproperty" class="internal alias" data-slug="Assembly">SetCustomProperty</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#setcustomproperty" class="internal alias" data-slug="Part">SetCustomProperty</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Windows#setinputvalue" class="internal alias" data-slug="Windows">SetInputValue</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Configuration#setlocks" class="internal alias" data-slug="Configuration">SetLocks</a> — in <a href="./Configuration" class="internal" data-slug="Configuration">Configuration</a></li>
+<li><a href="./Windows#setstringlist" class="internal alias" data-slug="Windows">SetStringList</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Assembly#setuserdata" class="internal alias" data-slug="Assembly">SetUserData</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Part#setuserdata" class="internal alias" data-slug="Part">SetUserData</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Axis#show" class="internal alias" data-slug="Axis">Show</a> — in <a href="./Axis" class="internal" data-slug="Axis">Axis</a></li>
+<li><a href="./Plane#show" class="internal alias" data-slug="Plane">Show</a> — in <a href="./Plane" class="internal" data-slug="Plane">Plane</a></li>
+<li><a href="./Point#show" class="internal alias" data-slug="Point">Show</a> — in <a href="./Point" class="internal" data-slug="Point">Point</a></li>
+<li><a href="./Part#showfeature" class="internal alias" data-slug="Part">ShowFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#showfeature" class="internal alias" data-slug="Part">ShowFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#showpart" class="internal alias" data-slug="Assembly">ShowPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#showpart" class="internal alias" data-slug="Assembly">ShowPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#showsubassembly" class="internal alias" data-slug="Assembly">ShowSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Polyline#splitatpoint" class="internal alias" data-slug="Polyline">SplitAtPoint</a> — in <a href="./Polyline" class="internal" data-slug="Polyline">Polyline</a></li>
+<li><a href="./Polyline3D#splitatpoint" class="internal alias" data-slug="Polyline3D">SplitAtPoint</a> — in <a href="./Polyline3D" class="internal" data-slug="Polyline3D">Polyline3D</a></li>
+<li><a href="./Sketch#startfacemapping" class="internal alias" data-slug="Sketch">StartFaceMapping</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#startfacemapping" class="internal alias" data-slug="Sketch">StartFaceMapping</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#startmapping" class="internal alias" data-slug="Sketch">StartMapping</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#stopfacemapping" class="internal alias" data-slug="Sketch">StopFaceMapping</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch#stopmapping" class="internal alias" data-slug="Sketch">StopMapping</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Bspline#subdivide" class="internal alias" data-slug="Bspline">Subdivide</a> — in <a href="./Bspline" class="internal" data-slug="Bspline">Bspline</a></li>
+<li><a href="./Bspline3D#subdivide" class="internal alias" data-slug="Bspline3D">Subdivide</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Bspline3D#subdividegetnormals" class="internal alias" data-slug="Bspline3D">SubdivideGetNormals</a> — in <a href="./Bspline3D" class="internal" data-slug="Bspline3D">Bspline3D</a></li>
+<li><a href="./Part#suppressfeature" class="internal alias" data-slug="Part">SuppressFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#suppressfeature" class="internal alias" data-slug="Part">SuppressFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#suppresspart" class="internal alias" data-slug="Assembly">SuppressPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#suppresspart" class="internal alias" data-slug="Assembly">SuppressPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#suppresssubassembly" class="internal alias" data-slug="Assembly">SuppressSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+</ul>
+<h2 id="t">T<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#t" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Sketch#toxml" class="internal alias" data-slug="Sketch">ToXml</a> — in <a href="./Sketch" class="internal" data-slug="Sketch">Sketch</a></li>
+<li><a href="./Sketch3D#toxml" class="internal alias" data-slug="Sketch3D">ToXml</a> — in <a href="./Sketch3D" class="internal" data-slug="Sketch3D">Sketch3D</a></li>
+<li><a href="./ThreeD#transformpointusingvectors" class="internal alias" data-slug="ThreeD">TransformPointUsingVectors</a> — in <a href="./ThreeD" class="internal" data-slug="ThreeD">ThreeD</a></li>
+</ul>
+<h2 id="u">U<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#u" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="./Assembly#unanchorpart" class="internal alias" data-slug="Assembly">UnanchorPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#unanchorpart" class="internal alias" data-slug="Assembly">UnanchorPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#unanchorsubassembly" class="internal alias" data-slug="Assembly">UnanchorSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Configuration#unlockall" class="internal alias" data-slug="Configuration">UnlockAll</a> — in <a href="./Configuration" class="internal" data-slug="Configuration">Configuration</a></li>
+<li><a href="./Part#unsuppressfeature" class="internal alias" data-slug="Part">UnsuppressFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Part#unsuppressfeature" class="internal alias" data-slug="Part">UnsuppressFeature</a> — in <a href="./Part" class="internal" data-slug="Part">Part</a></li>
+<li><a href="./Assembly#unsuppresspart" class="internal alias" data-slug="Assembly">UnsuppressPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#unsuppresspart" class="internal alias" data-slug="Assembly">UnsuppressPart</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Assembly#unsuppresssubassembly" class="internal alias" data-slug="Assembly">UnsuppressSubAssembly</a> — in <a href="./Assembly" class="internal" data-slug="Assembly">Assembly</a></li>
+<li><a href="./Windows#utilitydialog" class="internal alias" data-slug="Windows">UtilityDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+<li><a href="./Windows#utilitydialog" class="internal alias" data-slug="Windows">UtilityDialog</a> — in <a href="./Windows" class="internal" data-slug="Windows">Windows</a></li>
+</ul>
+<hr/>
+<p><strong><a href="#methods-index" class="internal alias">⬆ Back to Top</a></strong></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-28" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#methods-index" data-for="methods-index">Methods Index</a></li><li class="depth-1"><a href="#browse-methods-by-category" data-for="browse-methods-by-category">Browse Methods by Category</a></li><li class="depth-2"><a href="#assembly-methods" data-for="assembly-methods">Assembly Methods</a></li><li class="depth-2"><a href="#sketching-methods" data-for="sketching-methods">Sketching Methods</a></li><li class="depth-2"><a href="#geometry-methods" data-for="geometry-methods">Geometry Methods</a></li><li class="depth-2"><a href="#part-methods" data-for="part-methods">Part Methods</a></li><li class="depth-1"><a href="#alphabetical-method-list" data-for="alphabetical-method-list">Alphabetical Method List</a></li><li class="depth-1"><a href="#" data-for></a></li><li class="depth-1"><a href="#a" data-for="a">A</a></li><li class="depth-1"><a href="#c" data-for="c">C</a></li><li class="depth-1"><a href="#d" data-for="d">D</a></li><li class="depth-1"><a href="#e" data-for="e">E</a></li><li class="depth-1"><a href="#f" data-for="f">F</a></li><li class="depth-1"><a href="#g" data-for="g">G</a></li><li class="depth-1"><a href="#h" data-for="h">H</a></li><li class="depth-1"><a href="#i" data-for="i">I</a></li><li class="depth-1"><a href="#j" data-for="j">J</a></li><li class="depth-1"><a href="#l" data-for="l">L</a></li><li class="depth-1"><a href="#m" data-for="m">M</a></li><li class="depth-1"><a href="#n" data-for="n">N</a></li><li class="depth-1"><a href="#o" data-for="o">O</a></li><li class="depth-1"><a href="#p" data-for="p">P</a></li><li class="depth-1"><a href="#q" data-for="q">Q</a></li><li class="depth-1"><a href="#r" data-for="r">R</a></li><li class="depth-1"><a href="#s" data-for="s">S</a></li><li class="depth-1"><a href="#t" data-for="t">T</a></li><li class="depth-1"><a href="#u" data-for="u">U</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="./Assembly" class="internal">Assembly</a></li><li><a href="./CSharp" class="internal">CSharp</a></li><li><a href="./Circle" class="internal">Circle</a></li><li><a href="./CircularArc.ArcType" class="internal">CircularArc.ArcType</a></li><li><a href="./CircularArc" class="internal">CircularArc</a></li><li><a href="./CircularArc3D.ArcType" class="internal">CircularArc3D.ArcType</a></li><li><a href="./CircularArc3D" class="internal">CircularArc3D</a></li><li><a href="./Class-List" class="internal">Class-List</a></li><li><a href="./Classes" class="internal">Classes</a></li><li><a href="./Configuration" class="internal">Configuration</a></li><li><a href="./Edge" class="internal">Edge</a></li><li><a href="./Ellipse" class="internal">Ellipse</a></li><li><a href="./EllipticalArc" class="internal">EllipticalArc</a></li><li><a href="./Face" class="internal">Face</a></li><li><a href="./Feature" class="internal">Feature</a></li><li><a href="./GlobalParameters" class="internal">GlobalParameters</a></li><li><a href="./GuideCurveTypes" class="internal">GuideCurveTypes</a></li><li><a href="./Home" class="internal">Home</a></li><li><a href="./IAxis" class="internal">IAxis</a></li><li><a href="./IPlane" class="internal">IPlane</a></li><li><a href="./IPoint" class="internal">IPoint</a></li><li><a href="./Interfaces" class="internal">Interfaces</a></li><li><a href="./Line" class="internal">Line</a></li><li><a href="./Line3D" class="internal">Line3D</a></li><li><a href="./LockTypes" class="internal">LockTypes</a></li><li><a href="./Members-Index" class="internal">Members-Index</a></li><li><a href="./Namespaces" class="internal">Namespaces</a></li><li><a href="./Parameter" class="internal">Parameter</a></li><li><a href="./ParameterTypes" class="internal">ParameterTypes</a></li><li><a href="./ParameterUnits" class="internal">ParameterUnits</a></li><li><a href="./Part.DirectionType" class="internal">Part.DirectionType</a></li><li><a href="./Part.EndCondition" class="internal">Part.EndCondition</a></li><li><a href="./Part.FileTypes" class="internal">Part.FileTypes</a></li><li><a href="./Part" class="internal">Part</a></li><li><a href="./Plane" class="internal">Plane</a></li><li><a href="./Point" class="internal">Point</a></li><li><a href="./Polyline" class="internal">Polyline</a></li><li><a href="./Polyline3D" class="internal">Polyline3D</a></li><li><a href="./PolylinePoint" class="internal">PolylinePoint</a></li><li><a href="./PolylinePoint3D" class="internal">PolylinePoint3D</a></li><li><a href="./Properties-Index" class="internal">Properties-Index</a></li><li><a href="./Properties" class="internal">Properties</a></li><li><a href="./Sketch.Constraints" class="internal">Sketch.Constraints</a></li><li><a href="./Sketch" class="internal">Sketch</a></li><li><a href="./Sketch3D" class="internal">Sketch3D</a></li><li><a href="./SketchPoint" class="internal">SketchPoint</a></li><li><a href="./SketchPoint3D" class="internal">SketchPoint3D</a></li><li><a href="./ThreeD" class="internal">ThreeD</a></li><li><a href="./TwoD" class="internal">TwoD</a></li><li><a href="./UnitTypes" class="internal">UnitTypes</a></li><li><a href="./Vertex" class="internal">Vertex</a></li><li><a href="./Windows" class="internal">Windows</a></li><li><a href="./WindowsInputTypes" class="internal">WindowsInputTypes</a></li><li><a href="./_Footer" class="internal">_Footer</a></li><li><a href="./_Sidebar" class="internal">_Sidebar</a></li><li><a href="./members-a" class="internal">members-a</a></li><li><a href="./members-c" class="internal">members-c</a></li><li><a href="./members-d" class="internal">members-d</a></li><li><a href="./members-g" class="internal">members-g</a></li><li><a href="./members-r" class="internal">members-r</a></li><li><a href="./members-s" class="internal">members-s</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">
+        const socket = new WebSocket('ws://localhost:3001')
+        // reload(true) ensures resources like images and scripts are fetched again in firefox
+        socket.addEventListener('message', () => document.location.reload(true))
+      </script><script src="./postscript.js" type="module"></script></html>
